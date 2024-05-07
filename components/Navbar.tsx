@@ -10,7 +10,6 @@ const Navbar = () => {
   const fetchGifCategories = async () => {
     const res = await fetch("/categories.json");
     const { data } = await res.json();
-    console.log("🚀 ~ fetchGifCategories ~ data:", data);
     setCategories(data);
   };
 
